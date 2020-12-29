@@ -1,0 +1,14 @@
+import cv2
+
+# Poner que camara estoy utilizando, 0 por ejemplo es la camara de la notebook
+captura = cv2.VideoCapture(0)
+
+# Mientras este ujsandose la camara
+while(captura.isOpened()):
+	# Devuelve 2 argumentos, una bool (cuando ya tenemos la imagen leida) y la imagen en si
+	ret, imagen = captura.read()
+	# Si tenemos una imagen vamos a visualizarla
+	if ret==True:
+		cv2.imshow('Video', imagen)
+		# Cuando usemos una maquina de 64 bits usamos esto
+		if cv2.waitKey(1) & 0xFF == 
