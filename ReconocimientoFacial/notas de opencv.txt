@@ -1,0 +1,2 @@
+Para usar cv2.face.EigenFaceRecognizer_create()
+python -m pip install --user opencv-contrib-python
